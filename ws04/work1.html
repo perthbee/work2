@@ -1,0 +1,22 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <button >blue</button>
+        <button >red</button>
+        <button >green</button>
+        <script>
+        
+        const bnts= document.querySelectorAll("button");
+        bnts.forEach(btn =>{
+            btn.addEventListener("click",()=>{
+
+            document.body.style.backgroundColor=btn.textContent;
+
+            });
+        });
+    
+    </script> 
+    </body> 
+</html>

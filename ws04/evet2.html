@@ -1,0 +1,41 @@
+<!DOCTYPE html >
+<html>
+
+<head></head>
+<body>
+
+<input type = "text" id ="uname" placeholder ="กรุณาใส่ชื่อด้วย" :>
+<input type = "email" id ="email" placeholder = "ระบุ email address" >
+<input type=  "password" id="pwd" placeholder="รหัสผ่าน" >
+<p id = "show"></p>
+<script>
+    const unameInput = document.getElementById("uname");
+    const showmess = document.getElementById("show");
+    unameInput.addEventListener("input",()=>{
+        
+        showmess.textContent = "Welcome" +unameInput.value
+        +" to NPRU";
+    });
+
+    const emailInput = document.getElementById("email");
+    emailInput.addEventListener("input",()=>{
+        if(emailInput.value.includes("@")){
+            showmess.textContent ="Correct Email ";
+            }else{
+            showmess.textContent =" Email  ไม่มี @ ";
+        }
+        });
+
+         const pwdInput = document.getElementById("pwd");
+            pwdInput.addEventListener("input",()=>{
+        if(pwdInput.value.length <8){
+            showmess.textContent ="รหัสผ่าน 8 ตัว";
+        }else{
+            showmess.textContent = "รหัสผ่านครบกำหนด"
+            +pwdInput.value.length;
+        }
+
+    });
+</script>
+</body>
+</html>

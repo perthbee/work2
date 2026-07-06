@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <h1>มหาวิทยาลัยราชภัฎนครปฐม</h1>
+    <p class ="welcome" >ยินดีต้อนรับ</p>
+    <p id="message">สาขาวิชาวิทยาการคอมพิวเตอร์</p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSywW4Y4XPzW55g1bwQZh8Iw6WuFR6rnM3J20Q3v6Q50sQ4qwQkIRb0x1w&s=10">
+
+    <script>
+        const imgElem=document.querySelector("img");
+        imgElem.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSywW4Y4XPzW55g1bwQZh8Iw6WuFR6rnM3J20Q3v6Q50sQ4qwQkIRb0x1w&s=10";
+        imgElem.setAttribute("height","200");
+
+        const element1=document.getElementById("message");
+        element1.innerHTML="<strong>computer Scence</strong>"; 
+        
+        const element2=document.querySelector(".welcome");
+        element2.textContent+="NPRU";
+
+        const element3=document.querySelectorAll("p");
+        element3.forEach((element) =>{
+            element.textContent = "xxxxxxxxxxxxx";
+            element.style.color = "red";
+            element.style.fontSize = "20px";
+
+        });
+
+        const newElem = document.createElement(h2);
+            newElem.textContent = "Computer Science @ NPRU";
+        const lastElem=document.body.appendChild(newElem);
+            lastElem.remove();
+
+    </Script>
+</body>
+</html>
